@@ -46,7 +46,7 @@
     left: 0;
     position: absolute;
     top: 10px;
-    transition: all 400ms;
+    transition: all 200ms;
 }
 
 .contact__field {
@@ -55,7 +55,7 @@
     font-size: 1rem;
     outline: none;
     padding: 12px;
-    transition: all 400ms;
+    transition: all 200ms;
     width: 100%;
 }
 
