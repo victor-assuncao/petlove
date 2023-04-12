@@ -1,0 +1,58 @@
+.color-1 {
+    color: var(--color-1);
+}
+
+.color-5 {
+    color: var(--color-5);
+}
+
+.paw {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+}
+
+.pink-shadow {
+    box-shadow: 20px 20px 0 var(--color-5);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* Botão */
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.267);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: 250ms all;
+}
+
+.btn::before {
+    background-color: var(--color-3);
+    border-radius: 10px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: -1;
+    transition: 250ms all;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn:hover::before {
+    width: 100%;
+}

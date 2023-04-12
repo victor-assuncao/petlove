@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petlove</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/css/reset.css">
+    <link rel="stylesheet" href="./dist/css/global.css">
+    <link rel="stylesheet" href="./dist/css/header.css">
+    <link rel="stylesheet" href="./dist/css/home.css">
+    <link rel="stylesheet" href="./dist/css/about.css">
+    <link rel="stylesheet" href="./dist/css/services.css">
+    <link rel="stylesheet" href="./dist/css/customers.css">
+    <link rel="stylesheet" href="./dist/css/contact.css">
+    <link rel="stylesheet" href="./dist/css/footer.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,300,1,0" />
+    <link rel="shortcut icon" href="./dist/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header class="header">
+
+        <a href="#" class="container">
+            
+            <img src="./dist/img/logo.svg" alt="Logo da empresa" class="header__logo">
+        </a>
+
+        <nav class="header__nav">
+
+            <ul class="header__list">
+
+                <li class="header__item">
+
+                    <a href="#home" class="header__link">Inicio</a>
+                </li>
+
+                <li class="header__item">
+
+                    <a href="#about" class="header__link">Sobre</a>
+                </li>
+
+                <li class="header__item">
+
+                    <a href="#services" class="header__link">Serviços</a>
+                </li>
+
+                <li class="header__item">
+
+                    <a href="#customers" class="header__link">Clientes</a>
+                </li>
+
+                <li class="header__item">
+
+                    <a href="#contact" class="header__link">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+
+        <h1 class="home__title">
+
+            O <span class="color-5">bem-estar</span> do <br> 
+            seu pet é a nossa <br> 
+            <span class="color-5">prioridade</span> número <br> 
+            um!
+        </h1>
+
+        <a href="#services" class="container">
+            
+            <button class="home__btn btn">Nossos serviços</button>
+        </a>
+
+        <div class="home__background"></div>
+    </section>
+
+    <section id="about" class="about"> 
+
+        <div class="container">
+            <h1 class="about__title">Quem somos?</h1>
+
+            <p class="about__description">
+                Uma clínica veterinária especializada e dedicada ao cuidado 
+                e bem-estar dos cães e gatos, acreditamos que cada pet é um 
+                membro importante da família, portanto, nosso objetivo é garantir 
+                que eles vivam vidas saudáveis e felizes. Com equipamentos 
+                de última geração e instalações modernas, estamos equipados 
+                para lidar com qualquer problema de saúde que seu pet possa 
+                enfrentar. Além disso, nossa equipe é apaixonada por animais 
+                e dedicada a fornecer um atendimento personalizado para cada 
+                paciente, levando em consideração as necessidades individuais 
+                e o estilo de vida de cada pet.
+            </p>
+
+        </div>
+        
+        <div class="container">
+
+            <img src="./dist/img/about_photo.png" alt="Foto dos três fundadores" class="about__photo pink-shadow">
+
+            <div class="container">
+    
+                <img src="./dist/img/patinha.png" alt="" class="paw">
+                <img src="./dist/img/patinha.png" alt="" class="paw">
+                <img src="./dist/img/patinha.png" alt="" class="paw">
+                <img src="./dist/img/patinha.png" alt="" class="paw">
+                <img src="./dist/img/patinha.png" alt="" class="paw">
+                <img src="./dist/img/patinha.png" alt="" class="paw">
+                <img src="./dist/img/patinha.png" alt="" class="paw">
+                <img src="./dist/img/patinha.png" alt="" class="paw">
+                <img src="./dist/img/patinha.png" alt="" class="paw">
+                <img src="./dist/img/patinha.png" alt="" class="paw">
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="services" class="services">
+
+        <h1 class="services__title">Nossos principais serviços</h1>
+
+        <div class="container">
+
+            <div class="service">
+
+                <div class="container selected">
+
+                    <img src="./dist/img/service/appointment_icon.png" alt="Serviço de consulta" class="service__icon">
+                    <img src="./dist/img/service/appointment_icon_atv.png" alt="Serviço de consulta" class="service__icon--active">
+                </div>
+                
+                <p class="service__title">Consulta</p>
+            </div>
+
+            <div class="service">
+
+                <div class="container">
+
+                    <img src="./dist/img/service/cirurgy_icon.png" alt="Serviço de cirurgia" class="service__icon">
+                    <img src="./dist/img/service/cirurgy_icon_atv.png" alt="Serviço de cirurgia" class="service__icon--active">
+                </div>
+
+                <p class="service__title">Cirurgia</p>
+            </div>
+
+            <div class="service">
+
+                <div class="container">
+
+                    <img src="./dist/img/service/vaccine_icon.png" alt="Serviço de vacina" class="service__icon">
+                    <img src="./dist/img/service/vaccine_icon_atv.png" alt="Serviço de vacina" class="service__icon--active">
+                </div>
+
+                <p class="service__title">Vacina</p>
+            </div>
+
+            <div class="service">
+
+                <div class="container">
+
+                    <img src="./dist/img/service/xray_icon.png" alt="Serviço de raio-x" class="service__icon">
+                    <img src="./dist/img/service/xray_icon_atv.png" alt="Serviço de raio-x" class="service__icon--active">
+                </div>
+
+                <p class="service__title">Raio-X</p>
+            </div>
+            
+            <div class="service">
+
+                <div class="container">
+
+                    <img src="./dist/img/service/bloodtest_icon.png" alt="Serviço de exame de sangue" class="service__icon">
+                    <img src="./dist/img/service/bloodtest_icon_atv.png" alt="Serviço de exame de sangue" class="service__icon--active">
+                </div>
+
+                <p class="service__title">Exame de sangue</p>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="container">
+
+                <img src="./dist/img/service/appointment_photo.png" alt="" class="services__photo pink-shadow">
+            </div>
+
+            <div class="container">
+
+                <h2 class="services__secondTitle">Consulta</h2>
+
+                <p class="services__description">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis scelerisque massa, 
+                    vel imperdiet metus. Curabitur molestie laoreet magna ut euismod. Etiam sed dui ultrices 
+                    nisl sodales ullamcorper eget sit amet nibh. Donec et elit turpis. Class aptent taciti 
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti 
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti 
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti 
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </p>
+
+                <a href="#contact" class="services__link">
+
+                    <button class="services__btn btn">Entrar em contato</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="customers" class="customers">
+
+        <div class="container">
+
+            <div class="customers__card">
+
+                <img class="customers__image" src="./dist/img/customers/customers_angelakrais.png" alt="Angela Krais, cliente da petlove" />
+
+                <h1 class="customers__name">Angela Krais</h1>
+
+                <div class="container">
+
+                    <span class="material-symbols-rounded customers__rate">star_rate</span>
+                    <span class="material-symbols-rounded customers__rate">star_rate</span>
+                    <span class="material-symbols-rounded customers__rate">star_rate</span>
+                    <span class="material-symbols-rounded customers__rate">star_rate</span>
+                    <span class="material-symbols-rounded customers__rate">star_rate</span>
+                </div>
+
+                <p class="customers__text">
+
+                    Minha experiência na Petlove foi excelente! 
+                    A equipe foi gentil e prestativa, o veterinário 
+                    cuidou muito bem do meu cachorro, explicando o 
+                    diagnóstico e as opções de tratamento, e a 
+                    equipe de suporte sempre foi disponível e preocupada. 
+                    Recomendo a petlove para qualquer pessoa que esteja 
+                    procurando um lugar confiável para cuidar de seu pet.
+                </p>
+
+                <img class="customers__icon" src="./dist/img/customers/customers_icon.png" alt="Logo da Google" />
+            </div>
+
+            <div class="container">
+
+                <div class="customers__bullet active"></div>
+                <div class="customers__bullet"></div>
+                <div class="customers__bullet"></div>
+                <div class="customers__bullet"></div>
+            </div>
+        </div>
+
+        <h1 class="customers__title">
+            A clinica veterinária com 
+            <span class="color-1">95%</span> 
+            de satisfação dos clientes, o 
+            <span class="color-1">maior ranking</span> 
+            do mercado!
+        </h1>
+    </section>
+
+    <section id="contact" class="contact">
+
+        <div class="contact__card">
+
+            <h1 class="contact__title">Entre em contato conosco</h1>
+
+            <form class="contact__form">
+
+                <div class="container">
+
+                    <input type="text" class="contact__field" required/>
+                    <label class="contact__label">Nome</label>
+                </div>
+
+                <div class="container">
+
+                    <input type="number" class="contact__field" required/>
+                    <label class="contact__label">Telefone</label>
+                </div>
+
+                <div class="container">
+
+                    <textarea rows="1" class="contact__field contact__textarea" required></textarea>
+                    <label class="contact__label">Mensagem</label>
+                </div>
+
+                <button class="contact__submit btn" type="submit">Enviar</button>
+            </form>
+
+            <div class="container">
+
+                <div class="contact__divider"></div>
+
+                <p class="contact__dividertxt">OU</p>
+
+                <div class="contact__divider"></div>
+            </div>
+
+            <button class="contact__whatsapp btn">
+
+                Whatsapp
+                <img class="contact__logo" src="./dist/img/contact/whatsapp__icon.png"/>
+            </button>
+        </div>
+    </section>
+
+    <footer class="footer">
+         
+        <div class="container">
+
+            <div class="container">
+
+                <img src="./dist/img/logo.svg" alt="Logo da empresa" class="footer__logo">
+                <p class="footer__subtitle">Clinica veterinária especializada <br> em cães e gatos</p>
+            </div>
+
+            <div class="container">
+
+                <div class="footer__contacts">
+
+                    <div class="footer__number">
+
+                        <img src="./dist/img/footer/phone_icon.png" alt="Telefone para contato" class="footer__icon">
+
+                        <p class="footer__text">( 99 ) 99999-9999</p>
+                    </div>
+
+                    <div class="footer__email">
+
+                        <img src="./dist/img/footer/gmail_icon.png" alt="E-mail para contato" class="footer__icon">
+
+                        <p class="footer__text">petlove@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="footer__socialMedia">
+
+                    <p class="footer__description">Confira as nossas redes sociais <br> e fique por dentro de tudo!</p>
+
+                    <div class="container">
+
+                        <img src="./dist/img/footer/instagram_icon.png" alt="Instagram da empresa" class="footer__icon">
+                        <img src="./dist/img/footer/facebook_icon.png" alt="Facebook da empresa" class="footer__icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer__divider">
+
+        <p class="footer__copyright">© 2023 - Petlove Inc. Alguns direitos reservados</p>
+    </footer>
+
+</body>
+</html>

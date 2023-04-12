@@ -1,0 +1,31 @@
+.header {
+    align-items: center;
+    background-color: var(--color-1);
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 var(--side-padding);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+}
+
+.header__item {
+    margin-left: 40px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+    font-weight: 500;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "petlove",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor-assuncao/petlove.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victor-assuncao/petlove/issues"
+  },
+  "homepage": "https://github.com/victor-assuncao/petlove#readme",
+  "devDependencies": {
+    "typescript": "^5.0.3"
+  }
+}
