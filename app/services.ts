@@ -21,15 +21,9 @@ export class Services {
                     element.classList.add('selected');
                     
                     this.selectedService = Number(element.getAttribute('data-service'));
-
-                    this.changeContent();
                 })
             }
         );
-    };
-
-    changeContent() {
-
     };
 
 }

@@ -11,12 +11,8 @@ export class Services {
                 icons[this.selectedService].classList.remove('selected');
                 element.classList.add('selected');
                 this.selectedService = Number(element.getAttribute('data-service'));
-                this.changeContent();
             });
         });
-    }
-    ;
-    changeContent() {
     }
     ;
 }

@@ -31,9 +31,10 @@
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.267);
     cursor: pointer;
+    overflow: hidden;
     position: relative;
-    z-index: 1;
     transition: 250ms all;
+    z-index: 1;
 }
 
 .btn::before {
@@ -46,7 +47,7 @@
     left: 0;
     width: 0;
     z-index: -1;
-    transition: 250ms all;
+    transition: all 250ms;
 }
 
 .btn:hover {

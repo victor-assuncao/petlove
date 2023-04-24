@@ -130,6 +130,25 @@
     background-color: #22B239;
 }
 
+.contact__submit::after {
+    animation-direction: alternate;
+
+    background-color: #22B239;
+    border-radius: 10px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: -1;
+    transition: width 1s;
+}
+
+.sent::after {
+    width: 100%;
+}
+
 .contact__logo {
     height: 26px;
     width: 26px;

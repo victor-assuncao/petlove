@@ -95,7 +95,7 @@
     top: 0;
     transform: translate(50%, 50%);
     width: 40px;
-    transition: opacity 250ms;
+    transition: opacity 400ms;
 }
 
 .service__icon--active {
@@ -136,7 +136,7 @@
     display: flex;
     justify-content: center;
     gap: 60px;
-    transition: all 250ms;
+    transition: all 800ms;
 }
 
 #radio1:checked ~ div.services__slides > .services__slideFirst {

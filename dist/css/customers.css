@@ -33,6 +33,7 @@
     gap: 20px;
     padding: 30px;
     width: 450px;
+    height: fit-content;
 }
 
 .customers__image {
@@ -59,6 +60,25 @@ span.customers__rate {
     width: 34px;
 }
 
+/* Slider */
+
+.customers__radio {
+    display: none;
+}
+
+.customers__slider {
+    overflow: hidden;
+    padding: 0 10px;
+    box-sizing: content-box;
+}
+
+.customers__slides {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 800ms;
+}
+
 /* Others */
 
 .customers > .container {
@@ -79,6 +99,8 @@ span.customers__rate {
     cursor: pointer;
     height: 12px;
     width: 12px;
+    
+    transition: all 400ms;
 }
 
 .customers__bullet.active {
