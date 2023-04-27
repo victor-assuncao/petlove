@@ -1,4 +1,5 @@
 import { Customers } from "./customers.js";
+import { Header } from "./header.js";
 import { Services } from "./services.js";
 
 new Services();
@@ -28,3 +29,5 @@ document.querySelector('#form').addEventListener('submit', (event) => {
     }, 3000);
     
 });
+
+new Header();

@@ -6,6 +6,7 @@
     flex-direction: column;
     gap: 100px;
     margin-bottom: 100px;
+    padding: 0 var(--side-padding);
 }
 
 .services__title {
@@ -17,6 +18,8 @@
     display: flex;
     gap: 100px;
     flex-wrap: wrap;
+    justify-content: center;
+    z-index: 2;
 }
 
 .services > .container:last-child {
@@ -26,14 +29,17 @@
 
 .services__photo {
     border-radius: 10px;
-    width: 450px;
+    max-width: 450px;
     height: 350px;
 }
 
 .services__slide > .container:last-child { /* Container da descrição */
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    z-index: 1;
 }
 
 .services__secondTitle {
@@ -43,8 +49,13 @@
 
 .services__description {
     font-size: 1.2rem;
+    min-width: 520px;
     max-width: 700px;
     text-align: justify;
+}
+
+.services__link {
+    width: fit-content;
 }
 
 .services__btn {
@@ -123,7 +134,7 @@
     margin-top: -24px;
     overflow: hidden;
     padding: 24px 0;
-    width: 100vw;
+    width: calc(100vw - var(--side-padding));
 }
 
 .services__slides {
@@ -132,11 +143,14 @@
 }
 
 .services__slide {
-    width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap-reverse;
     gap: 60px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
     transition: all 800ms;
+    width: 100vw;
 }
 
 #radio1:checked ~ div.services__slides > .services__slideFirst {
@@ -144,7 +158,7 @@
 }
 
 #radio2:checked ~ div.services__slides > .services__slideFirst {
-    margin-left: -20%;
+    margin-left: calc(-20% - (var(--side-padding) * 2));
 }
 
 #radio3:checked ~ div.services__slides > .services__slideFirst {
@@ -157,4 +171,51 @@
 
 #radio5:checked ~ div.services__slides > .services__slideFirst {
     margin-left: -80%;
+}
+
+@media (max-width: 1250px) {
+
+    .services__slider {
+        width: 100vw;
+    }
+
+    .services__slide > .container:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: -1;
+
+    }
+
+    .services__slide::before {
+        background-color: #0000008c;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .services__photo {
+        width: 100%;
+        height: 100%;
+        max-width: initial;
+        object-fit: cover;
+        box-shadow: none;
+    }
+
+    .services__slide > .container:last-child {
+        padding: 40px var(--side-padding);
+    }
+    
+    .services__secondTitle {
+        color: var(--color-5);
+    }
+
+    .services__description {
+        color: #fff;
+    }
+
 }

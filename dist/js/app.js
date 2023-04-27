@@ -1,4 +1,5 @@
 import { Customers } from "./customers.js";
+import { Header } from "./header.js";
 import { Services } from "./services.js";
 new Services();
 const customers = new Customers();
@@ -18,3 +19,4 @@ document.querySelector('#form').addEventListener('submit', (event) => {
         submit.classList.toggle('sent');
     }, 3000);
 });
+new Header();
