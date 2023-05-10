@@ -11,16 +11,16 @@ export class Customers {
     setHeight() {
 
         const height = this.height;
-        const slider: any = document.querySelector('#slider');
+        const slider: any = document.querySelector('#customers__slider');
 
         slider.style.height = `${height + 10}px`;
     }
 
-    setMargin(multiplier: number) {
+    setMargin() {
 
-        const slides: any = document.querySelector('#slides');
+        const slides: any = document.querySelector('#customers__slides');
         
-        slides.style.marginTop = `-${(this.height + 10) * multiplier}px`
+        slides.style.marginTop = `-${(this.height + 10) * this.selected}px`
     }
 
     bulletEvent() {
@@ -35,7 +35,7 @@ export class Customers {
                 bullets[i].classList.add('active');
 
                 this.selected = i;
-                this.setMargin(i);
+                this.setMargin();
             });
 
         };

@@ -137,7 +137,7 @@
 
             <div class="service">
 
-                <label for="radio1" data-service="0" class="container selected">
+                <label for="service1" class="container selected">
 
                     <img src="./dist/img/service/appointment_icon.png" alt="Serviço de consulta" class="service__icon">
                     <img src="./dist/img/service/appointment_icon_atv.png" alt="Serviço de consulta" class="service__icon--active">
@@ -148,7 +148,7 @@
 
             <div class="service">
 
-                <label for="radio2" data-service="1" class="container">
+                <label for="service2" class="container">
 
                     <img src="./dist/img/service/cirurgy_icon.png" alt="Serviço de cirurgia" class="service__icon">
                     <img src="./dist/img/service/cirurgy_icon_atv.png" alt="Serviço de cirurgia" class="service__icon--active">
@@ -159,7 +159,7 @@
 
             <div class="service">
 
-                <label for="radio3" data-service="2" class="container">
+                <label for="service3" class="container">
 
                     <img src="./dist/img/service/vaccine_icon.png" alt="Serviço de vacina" class="service__icon">
                     <img src="./dist/img/service/vaccine_icon_atv.png" alt="Serviço de vacina" class="service__icon--active">
@@ -170,7 +170,7 @@
 
             <div class="service">
 
-                <label for="radio4" data-service="3" class="container">
+                <label for="service4" class="container">
 
                     <img src="./dist/img/service/xray_icon.png" alt="Serviço de raio-x" class="service__icon">
                     <img src="./dist/img/service/xray_icon_atv.png" alt="Serviço de raio-x" class="service__icon--active">
@@ -181,7 +181,7 @@
             
             <div class="service">
 
-                <label for="radio5" data-service="4" class="container">
+                <label for="service5" class="container">
 
                     <img src="./dist/img/service/bloodtest_icon.png" alt="Serviço de exame de sangue" class="service__icon">
                     <img src="./dist/img/service/bloodtest_icon_atv.png" alt="Serviço de exame de sangue" class="service__icon--active">
@@ -191,168 +191,163 @@
             </div>
         </div>
 
-        <div class="container">
-            
-            <div class="services__slider">
+        <div id="services__slider" class="services__slider">
 
-                <!-- Radios -->
-                <input type="radio" class="services__radio" id="radio1" name="service" />
-                <input type="radio" class="services__radio" id="radio2" name="service" />
-                <input type="radio" class="services__radio" id="radio3" name="service" />
-                <input type="radio" class="services__radio" id="radio4" name="service" />
-                <input type="radio" class="services__radio" id="radio5" name="service" />
+            <input class="services__radio" type="radio" name="service" id="service1">
+            <input class="services__radio" type="radio" name="service" id="service2">
+            <input class="services__radio" type="radio" name="service" id="service3">
+            <input class="services__radio" type="radio" name="service" id="service4">
+            <input class="services__radio" type="radio" name="service" id="service5">
 
-                <!-- Slides -->
-                <div class="services__slides">
+            <div id="services__slides" class="services__slides">
+                
+                <div data-services-slide class="services__slide">
                     
-                    <div class="services__slide services__slideFirst">
-                        
-                        <div class="container">
-            
-                            <img src="./dist/img/service/appointment_photo.png" alt="" class="services__photo pink-shadow">
-                        </div>
-
-                        <div class="container">
-
-                            <h2 class="services__secondTitle">Consulta</h2>
-                            
-                            <p class="services__description">
-                                
-                                A consulta começa com uma avaliação do histórico médico e comportamental 
-                                do animal de estimação. Durante o exame, o veterinário verificará os sinais vitais e 
-                                realizará testes adicionais, se necessário. Após o exame, o veterinário discutirá 
-                                suas observações e recomendações de tratamento com o proprietário do animal, elaborando 
-                                um plano personalizado para o tratamento. A equipe está sempre disponível para ajudar 
-                                e responder a quaisquer perguntas, visando proporcionar o melhor atendimento possível.
-                            </p>
-
-                            <a href="#contact" class="services__link">
-
-                                <button class="services__btn btn">Entrar em contato</button>
-                            </a>
-                        </div>
+                    <div class="container">
+        
+                        <img src="./dist/img/service/appointment_photo.png" alt="" class="services__photo pink-shadow">
                     </div>
 
-                    <div class="services__slide">
+                    <div class="container">
+
+                        <h2 class="services__slide__title">Consulta</h2>
                         
-                        <div class="container">
-            
-                            <img src="./dist/img/service/cirurgy_photo.png" alt="" class="services__photo pink-shadow">
-                        </div>
-
-                        <div class="container">
-
-                            <h2 class="services__secondTitle">Cirurgia</h2>
+                        <p class="services__description">
                             
-                            <p class="services__description">
-                                
-                                A cirurgia tem procedimentos desde rotina até cirurgias mais complexas. A equipe de cirurgiões 
-                                veterinários é altamente especializada e realiza uma avaliação completa do animal antes da cirurgia, 
-                                garantindo sua segurança e bem-estar durante o procedimento. Após a cirurgia, é feito um 
-                                acompanhamento cuidadoso para garantir a recuperação adequada do animal. Esse serviço é 
-                                fundamental para garantir a saúde e o bem-estar dos animais de estimação, podendo ser essencial 
-                                para prolongar sua vida e qualidade de vida.
-                            </p>
+                            A consulta começa com uma avaliação do histórico médico e comportamental 
+                            do animal de estimação. Durante o exame, o veterinário verificará os sinais vitais e 
+                            realizará testes adicionais, se necessário. Após o exame, o veterinário discutirá 
+                            suas observações e recomendações de tratamento com o proprietário do animal, elaborando 
+                            um plano personalizado para o tratamento. A equipe está sempre disponível para ajudar 
+                            e responder a quaisquer perguntas, visando proporcionar o melhor atendimento possível.
+                        </p>
 
-                            <a href="#contact" class="services__link">
+                        <a href="#contact" class="services__link">
 
-                                <button class="services__btn btn">Entrar em contato</button>
-                            </a>
-                        </div>
+                            <button class="services__btn btn">Entrar em contato</button>
+                        </a>
                     </div>
-
-                    <div class="services__slide">
-                        
-                        <div class="container">
-            
-                            <img src="./dist/img/service/vaccine_photo.png" alt="" class="services__photo pink-shadow">
-                        </div>
-
-                        <div class="container">
-
-                            <h2 class="services__secondTitle">Vacina</h2>
-                            
-                            <p class="services__description">
-                                
-                                Primeiro realizamos uma avaliação detalhada da saúde do seu animal de estimação, incluindo 
-                                histórico médico e exames 
-                                físicos para garantir que ele esteja apto a receber a vacinação sem riscos adicionais 
-                                à sua saúde. Nossos veterinários irão aconselhar sobre as vacinas necessárias, considerando 
-                                idade, histórico médico e estilo de vida do seu animal. Os mesmos administram as vacinas em um 
-                                ambiente seguro e limpo, seguindo rigorosamente os protocolos de vacinação apropriados. 
-                                Forneceremos registros da vacinação e orientações sobre vacinas de reforço para garantir 
-                                que seu animal de estimação esteja sempre protegido contra doenças e nossa equipe está 
-                                sempre disponível para responder a quaisquer perguntas que você possa ter.
-                            </p>
-
-                            <a href="#contact" class="services__link">
-
-                                <button class="services__btn btn">Entrar em contato</button>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="services__slide">
-                        
-                        <div class="container">
-            
-                            <img src="./dist/img/service/xray_photo.png" alt="" class="services__photo pink-shadow">
-                        </div>
-
-                        <div class="container">
-
-                            <h2 class="services__secondTitle">Raio-X</h2>
-                            
-                            <p class="services__description">
-                                
-                                Antes de realizar o exame, nossa equipe realizará uma avaliação da saúde do seu animal 
-                                de estimação para garantir que ele esteja em condições adequadas para o procedimento. 
-                                Em seguida, utilizaremos tecnologia avançada para produzir imagens detalhadas dos ossos 
-                                e órgãos internos do seu animal, que serão interpretadas por nossos veterinários para 
-                                identificar quaisquer problemas ou lesões. Forneceremos orientações sobre o tratamento 
-                                apropriado, se necessário, e estamos sempre disponíveis para responder a quaisquer 
-                                perguntas que você possa ter sobre o processo de raio-x. Nosso objetivo é garantir a 
-                                saúde e o bem-estar do seu animal de estimação e ajudar a identificar e tratar problemas 
-                                de saúde precocemente.
-                            </p>
-
-                            <a href="#contact" class="services__link">
-
-                                <button class="services__btn btn">Entrar em contato</button>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="services__slide">
-                        
-                        <div class="container">
-            
-                            <img src="./dist/img/service/bloodtest_photo.png" alt="" class="services__photo pink-shadow">
-                        </div>
-
-                        <div class="container">
-
-                            <h2 class="services__secondTitle">Exame de Sangue</h2>
-                            
-                            <p class="services__description">
-                                
-                                Nossa equipe coletará uma amostra de sangue do seu animal de estimação, que será analisada 
-                                por meio de tecnologia avançada para detectar quaisquer problemas de saúde, como doenças 
-                                infecciosas, problemas hormonais ou desequilíbrios químicos. Nossos veterinários interpretarão 
-                                os resultados do exame de sangue para identificar qualquer problema de saúde e fornecerão 
-                                orientações sobre o tratamento adequado, se necessário. Além disso, os resultados do exame 
-                                de sangue podem ajudar nossos veterinários a detectar problemas de saúde precocemente, o que 
-                                pode levar a um tratamento mais eficaz e um prognóstico mais favorável.
-                            </p>
-
-                            <a href="#contact" class="services__link">
-
-                                <button class="services__btn btn">Entrar em contato</button>
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
+
+                <div class="services__slide">
+                    
+                    <div class="container">
+        
+                        <img src="./dist/img/service/cirurgy_photo.png" alt="" class="services__photo pink-shadow">
+                    </div>
+
+                    <div class="container">
+
+                        <h2 class="services__secondTitle">Cirurgia</h2>
+                        
+                        <p class="services__description">
+                            
+                            A cirurgia tem procedimentos desde rotina até cirurgias mais complexas. A equipe de cirurgiões 
+                            veterinários é altamente especializada e realiza uma avaliação completa do animal antes da cirurgia, 
+                            garantindo sua segurança e bem-estar durante o procedimento. Após a cirurgia, é feito um 
+                            acompanhamento cuidadoso para garantir a recuperação adequada do animal. Esse serviço é 
+                            fundamental para garantir a saúde e o bem-estar dos animais de estimação, podendo ser essencial 
+                            para prolongar sua vida e qualidade de vida.
+                        </p>
+
+                        <a href="#contact" class="services__link">
+
+                            <button class="services__btn btn">Entrar em contato</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__slide">
+                    
+                    <div class="container">
+        
+                        <img src="./dist/img/service/vaccine_photo.png" alt="" class="services__photo pink-shadow">
+                    </div>
+
+                    <div class="container">
+
+                        <h2 class="services__secondTitle">Vacina</h2>
+                        
+                        <p class="services__description">
+                            
+                            Primeiro realizamos uma avaliação detalhada da saúde do seu animal de estimação, incluindo 
+                            histórico médico e exames 
+                            físicos para garantir que ele esteja apto a receber a vacinação sem riscos adicionais 
+                            à sua saúde. Nossos veterinários irão aconselhar sobre as vacinas necessárias, considerando 
+                            idade, histórico médico e estilo de vida do seu animal. Os mesmos administram as vacinas em um 
+                            ambiente seguro e limpo, seguindo rigorosamente os protocolos de vacinação apropriados. 
+                            Forneceremos registros da vacinação e orientações sobre vacinas de reforço para garantir 
+                            que seu animal de estimação esteja sempre protegido contra doenças e nossa equipe está 
+                            sempre disponível para responder a quaisquer perguntas que você possa ter.
+                        </p>
+
+                        <a href="#contact" class="services__link">
+
+                            <button class="services__btn btn">Entrar em contato</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__slide">
+                    
+                    <div class="container">
+        
+                        <img src="./dist/img/service/xray_photo.png" alt="" class="services__photo pink-shadow">
+                    </div>
+
+                    <div class="container">
+
+                        <h2 class="services__secondTitle">Raio-X</h2>
+                        
+                        <p class="services__description">
+                            
+                            Antes de realizar o exame, nossa equipe realizará uma avaliação da saúde do seu animal 
+                            de estimação para garantir que ele esteja em condições adequadas para o procedimento. 
+                            Em seguida, utilizaremos tecnologia avançada para produzir imagens detalhadas dos ossos 
+                            e órgãos internos do seu animal, que serão interpretadas por nossos veterinários para 
+                            identificar quaisquer problemas ou lesões. Forneceremos orientações sobre o tratamento 
+                            apropriado, se necessário, e estamos sempre disponíveis para responder a quaisquer 
+                            perguntas que você possa ter sobre o processo de raio-x. Nosso objetivo é garantir a 
+                            saúde e o bem-estar do seu animal de estimação e ajudar a identificar e tratar problemas 
+                            de saúde precocemente.
+                        </p>
+
+                        <a href="#contact" class="services__link">
+
+                            <button class="services__btn btn">Entrar em contato</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__slide">
+                    
+                    <div class="container">
+        
+                        <img src="./dist/img/service/bloodtest_photo.png" alt="" class="services__photo pink-shadow">
+                    </div>
+
+                    <div class="container">
+
+                        <h2 class="services__secondTitle">Exame de Sangue</h2>
+                        
+                        <p class="services__description">
+                            
+                            Nossa equipe coletará uma amostra de sangue do seu animal de estimação, que será analisada 
+                            por meio de tecnologia avançada para detectar quaisquer problemas de saúde, como doenças 
+                            infecciosas, problemas hormonais ou desequilíbrios químicos. Nossos veterinários interpretarão 
+                            os resultados do exame de sangue para identificar qualquer problema de saúde e fornecerão 
+                            orientações sobre o tratamento adequado, se necessário. Além disso, os resultados do exame 
+                            de sangue podem ajudar nossos veterinários a detectar problemas de saúde precocemente, o que 
+                            pode levar a um tratamento mais eficaz e um prognóstico mais favorável.
+                        </p>
+
+                        <a href="#contact" class="services__link">
+
+                            <button class="services__btn btn">Entrar em contato</button>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -366,9 +361,9 @@
             <input data-customers-radio class="customers__radio" type="radio" name="customers" id="costumers__radio3">
             <input data-customers-radio class="customers__radio" type="radio" name="customers" id="costumers__radio4">
 
-            <div id="slider" class="customers__slider">
+            <div id="customers__slider" class="customers__slider">
 
-                <div id="slides" class="customers__slides">
+                <div id="customers__slides" class="customers__slides">
 
                     <div id="customers__card" class="customers__card">
         

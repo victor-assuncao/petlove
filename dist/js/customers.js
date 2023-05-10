@@ -6,12 +6,12 @@ export class Customers {
     }
     setHeight() {
         const height = this.height;
-        const slider = document.querySelector('#slider');
+        const slider = document.querySelector('#customers__slider');
         slider.style.height = `${height + 10}px`;
     }
-    setMargin(multiplier) {
-        const slides = document.querySelector('#slides');
-        slides.style.marginTop = `-${(this.height + 10) * multiplier}px`;
+    setMargin() {
+        const slides = document.querySelector('#customers__slides');
+        slides.style.marginTop = `-${(this.height + 10) * this.selected}px`;
     }
     bulletEvent() {
         const bullets = document.querySelectorAll('[data-customers-bullet]');
@@ -20,7 +20,7 @@ export class Customers {
                 bullets[this.selected].classList.remove('active');
                 bullets[i].classList.add('active');
                 this.selected = i;
-                this.setMargin(i);
+                this.setMargin();
             });
         }
         ;

@@ -57,3 +57,10 @@
 .btn:hover::before {
     width: 100%;
 }
+
+@media (max-width: 600px) {
+
+    .pink-shadow {
+        box-shadow: 10px 10px 0 var(--color-5);
+    }
+}

@@ -1,18 +1,24 @@
 export class Services {
     constructor() {
         this.selectedService = 0;
-        this.changeIconState();
+        this.setSliderWidth();
+        window.addEventListener('resize', () => {
+            this.setSliderWidth();
+            // this.setSlidesMargin();
+        });
     }
     ;
-    changeIconState() {
-        const icons = document.querySelectorAll('[data-service]');
-        icons.forEach((element) => {
-            element.addEventListener('click', () => {
-                icons[this.selectedService].classList.remove('selected');
-                element.classList.add('selected');
-                this.selectedService = Number(element.getAttribute('data-service'));
-            });
-        });
+    setSliderWidth() {
+        const slider = document.querySelector('#services__slider');
+        slider.style.width = `${this.width}px`;
+    }
+    ;
+    // setSlidesMargin() {
+    //     const slides: any = document.querySelector('#services__slides');
+    //     slides.style.marginLeft = `-${(this.width) * this.selectedService}px`
+    // };
+    get width() {
+        return document.querySelector('[data-services-slide]').clientWidth;
     }
     ;
 }

@@ -4,26 +4,33 @@ export class Services {
 
     constructor() {
 
-        this.changeIconState();
+        this.setSliderWidth();
+
+        window.addEventListener('resize', () => {
+
+            this.setSliderWidth();
+            // this.setSlidesMargin();
+        });
     };
 
-    changeIconState () {
+    setSliderWidth(): void {
+
+        const slider: any =  document.querySelector('#services__slider');
+
+        slider.style.width = `${this.width}px`
+
+    };
+
+    // setSlidesMargin() {
+
+    //     const slides: any = document.querySelector('#services__slides');
         
-        const icons = document.querySelectorAll('[data-service]');
+    //     slides.style.marginLeft = `-${(this.width) * this.selectedService}px`
+    // };
 
-        icons.forEach(
+    get width(): number {
 
-            (element: Element) => {
-
-                element.addEventListener('click', () => {
-
-                    icons[this.selectedService].classList.remove('selected');
-                    element.classList.add('selected');
-                    
-                    this.selectedService = Number(element.getAttribute('data-service'));
-                })
-            }
-        );
+        return document.querySelector('[data-services-slide]').clientWidth;
     };
 
 }

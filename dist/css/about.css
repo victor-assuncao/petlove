@@ -41,6 +41,7 @@
 
 .about > .container:nth-child(2) {
     max-width: 500px;
+    z-index: 1;
 }
 
 .about__photo {
